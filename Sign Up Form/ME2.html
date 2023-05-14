@@ -1,0 +1,129 @@
+<!doctype Html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Sign-up Form Raynold </title>
+        <meta name="viewport" content="width=device, initial - scale = 1">
+        <style>
+            label{
+                width: 150px;
+                display: inline-block;
+                margin: 4px;
+            }
+            .body-container{
+                width: 50%;
+                margin: 50px auto;
+                background-color: #E4D0D0;
+            }
+            body{
+                background-color: #867070;
+            }
+            h2{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="body-container">
+        <center><h2> SIGN UP NOW! </h2> </center>
+        <h3>Fields  marked (*) are required</h3>
+        <form>
+            <fieldset>
+                <legend> Personal Information </legend>
+                    <label for="fname"> Firstname: * </label> <!-- Labels -->
+                    <input type="text" minlength="0" maxlength="30" size="35" placeholder="FirstName" required>  
+                    <br>
+                    <label for="lname"> Last Name: *</label>
+                    <input type="text" maxlength="30" size="35" placeholder="LastName" required>
+                    <br>
+                    <label for="email"> Email: * </label>
+                    <input type="email" maxlength="30" size="35" placeholder="myname@example.com" required>
+                    <br>
+                    <label for="phonenumber"> Phone: *</label>
+                    <input type="tel" placeholder="e.g 09XXXXXXXXX" required>
+                    <br>
+                    <label for="bday"> Date of Birth: * </label>
+                    <input type="date" >
+                    <br>
+                    <label for="age"> Age: *</label>
+                    <input type="number" min="0" max="120" required>
+                    <br>
+                    <label for="gender"> Gender: * </label>
+                    <select name="gender" id="gender">
+                        <option value="Male"> Male </option>
+                        <option value="Female"> Female </option>
+                        <option value="Non - binary"> Non - binary </option>
+                        <option value="Prefer not to say"> Prefer not to say </option>
+                    </select>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend> Delivery Address </legend>
+                <label for="address"> Address 1: * </label>
+                <input type="text" maxlength="35" minlength="20" size="40" placeholder="Street/House Number" required>
+                <br>
+                <label for="district"> District/Barangay: * </label>
+                <input type="text" maxlength="30" size="33" placeholder="" required>
+                <br>
+                <label for="city"> City: * </label>
+                <select name="city" id="city">
+                    <option value="Baguio"> Baguio </option>
+                    <option value="Angeles"> Angeles </option>
+                    <option value="San Fernando"> San Fernando </option>
+                    <option value="Tarlac"> Tarlac </option>
+                    <option value="Vigan"> Vigan </option>
+                    <option value="Tuguegarao"> Tuguegarao </option>
+                    <option value="Laoag"> Laoag </option>
+                </select>
+                <br>
+                <label for="postalcode"> Postal Code: * </label>
+                <input type="text" maxlength="4" size="5" placeholder="0000" required>
+                <br>
+                <label for="province"> Province: * </label>
+                <select name="city" id="city">
+                    <option value="Abra"> Abra </option>
+                    <option value="Apayao"> Apayao </option>
+                    <option value="Benguet"> Benguet </option>
+                    <option value="Ifugao"> Kalinga </option>
+                    <option value="Mountain Province"> Mountain Province </option>
+                    <option value="Ifugao"> Ifugao </option>
+                    <option value="Pampanga"> Pampanga </option>
+                    <option value="Batanes"> Batanes </option>
+                    <option value="Cagayan"> Cagayan </option>
+                    <option value="Isabela"> Isabela </option>
+                </select>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend> Membership Information </legend>
+                <label for="username"> Username: * </label>
+                <input type="text" minlength="8" maxlength="30"  size="35" placeholder="Atleast 8 alphanumeric characters" required>
+                <br>
+                <label for="pass"> Password: * </label>
+                <input type="password" minlength="8" maxlength="20" size="35" required>
+                <br>
+                
+                <label valign="top" for="subscription"> Magazine Subsciptions: * </label> <br>
+                <input type="checkbox" name="subscription" value="PC Magazine"> PC Magazine <br>
+                <input type="checkbox" name="subscription" value="Wired"> Wired <br>
+                <input type="checkbox" name="subscription" value="Computer world"> Computer World <br>
+                <input type="checkbox" name="subscription" value="I don't subscribe"> I don't subscribe <br>
+                <input type="checkbox" name="subscription" value="Other"> Others 
+            </fieldset>
+
+            <fieldset>
+            <input type="submit" value="Sign Up">
+            <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+
+        
+
+
+    </div>
+    </body>
+</html>
